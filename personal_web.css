@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+@charset "utf-8";
+
+body::-webkit-scrollbar{
+	width: 4px;
+}
+
+body::-webkit-scrollbar-track{
+	background: #FFFFFF;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: #007CFF;
+}
+
+* {
+  	box-sizing: border-box;
+}
+
+body {
+  	margin: 0;
+	background-color: white;
+}
+
+h1{
+	font-family: 'perpetua', cursive;
+	color: aliceblue;
+}
+
+h2{
+	font-size: 50px;
+	padding: 10px;
+	font-family: 'perpetua', cursive;
+	color: black;
+}
+
+h3{
+	padding-top: 50px;
+	font-family: 'perpetua', cursive;
+	color: aliceblue;
+}
+
+p{
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'didot', cursive;
+	color: aliceblue;
+}
+
+.link{
+	height: 66px;
+	width: 100%;
+	background-color: #007CFF;
+	position: relative;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+nav li{
+	display: inline;
+	float: left;
+}
+
+.nav-link{
+	background-color: #007CFF;
+}
+
+nav a {
+  	display: block;
+	float: left;
+	width: 100px;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	padding: 20px 0;
+	color: white;
+	transition: 0.6s;
+	font-family: 'prepetua';
+	font-size: 23px;
+}
+	
+.button:hover {
+	background-color: white;
+  	color: #0093FF;
+}
+
+nav a#toggle-button{
+	display: none;
+}
+
+input[type=text], select {
+  	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=submit] {
+  	width: 100%;
+  	background-color: #007CFF;
+  	color: aliceblue;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+
+input[type=submit]:hover {
+  	background-color: #3496FF;
+}
+
+div.container {
+  	background-color: #f2f2f2;
+  	padding: 20px;
+}
+
+.header {
+  	padding: 80px;
+  	text-align: center;
+  	background-image: url(PSX_20200408_2234356.jpg);
+	width: 100%;
+	height: 600px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: contain;
+  	color: white;
+}
+
+.header h1 {
+	font-size: 80px;
+	margin-top: 100px;
+}
+
+.header p{
+	font-size: 40px;
+}
+
+.about{
+	background-color: #007CFF;
+}
+
+.about h2{
+	color: aliceblue;
+}
+
+.row {
+  	position: relative;
+  	width: 50%;
+	padding: 5px;
+	float: left;
+}
+
+.image {
+  	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.middle {
+  	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.row::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.row:hover .image {
+  	opacity: 0.3;
+}
+
+.row:hover .middle {
+  	opacity: 1;
+}
+
+.text {
+	font-family: 'lora', serif;
+  	background-color: transparent;
+  	color: black;
+  	font-size: 20px;
+  	padding: 16px 32px;
+}
+
+.box{
+	padding-right: 35px;
+}
+
+.box li{
+	display: inline-block;
+	margin:5px;
+	list-style: none;
+}
+
+.box li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 60px;
+	transition: all ease-in-out 250ms;
+}
+
+.box li a:hover{
+	color: #62BCFF;
+}
+
+.footer {
+  	padding: 10px;
+	color: aliceblue;
+  	text-align: center;
+  	background: #007CFF;
+}
